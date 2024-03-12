@@ -36,12 +36,12 @@ It then groups the data based on the animal that the device was on using a user 
 The Parser and source file directories will already be set up on the Edge. The user only needs to manage the settings and potential SQL connection. 
 To do this, boot up ParserSettings.exe and this window will open:
 
-![Paser Settings UI]()
+![Paser Settings UI](/Images/parserSettings.png)
 
 By default the parser is only writing to local CSVs, and is reading the device to cow conversion information from a local excel file. Both of these require the user to 
 repeatedly return to the edge to both retrieve data, and update the excel conversion. The excel table looks like:
 
-![device to cow excel]()
+![device to cow excel](/Images/cowExcel.png)
 
 
 If the user desires to do this in the cloud, they can export the data to SQL tables, 
@@ -55,7 +55,7 @@ The ParserManagement.exe handles connecting to SQL from the user's end, managing
 #### SQL Connection
 First, the SQL connection tab will look like:
 
-![SQL Connecting]()
+![SQL Connecting](/Images/sqlConnect.png)
 
 The credentials will get saved in an encrypted file so as to facilitate future logins.
 
