@@ -38,14 +38,14 @@ To do this, boot up ParserSettings.exe and this window will open:
 
 ![Paser Settings UI](./Images/parserSettings.png)
 
-By default the parser is only writing to local CSVs, and is reading the device to cow conversion information from a local excel file. Both of these require the user to 
+By default the parser is only writing to local CSVs, and is reading the device to animal conversion information from a local excel file. Both of these require the user to 
 repeatedly return to the edge to both retrieve data, and update the excel conversion. The excel table looks like:
 
-![device to cow excel](./Images/cowExcel.png)
+![device to animal excel](./Images/animalExcel.png)
 
 
 If the user desires to do this in the cloud, they can export the data to SQL tables, 
-and read the device to cow conversion from a SQL table. 
+and read the device to animal conversion from a SQL table. 
 
 ### Management
 
@@ -71,7 +71,7 @@ For each of the devices, the user can assign a device name for easy of understan
 
 The animal conversion will look like: 
 
-![device to cow ui]()
+![device to animal ui]()
 
 Here the user selects a decive name, pairs it to an animal ID, and selects the time range that the device will be on the animal. Once the device is actually removed from the animal the user should update the "Actual End" boxes. 
 
@@ -91,6 +91,14 @@ It should be noted that there will be a lot of data and downloading all of it ma
 ---
 
 ## Annotation
+
+### Setup
+
+The video camera footage needs to follow a specific file hierarchy. It should follow:
+
+Video/CameraX/Date/hour.mp4
+
+![Video Structure](./Images/videostruct.png)
 
 ### Startup
 
